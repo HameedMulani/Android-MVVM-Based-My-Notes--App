@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="16dp"
+    >
+
+    <TextView
+        android:id="@+id/tvNoteTittle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Hameed Note"
+        android:padding="15dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:background="@drawable/item_note_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/ivDelete"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvNoteDisc"
+        />
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_btn_delete"
+        android:padding="14dp"
+        android:src="@drawable/ic_baseline_delete_forever_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvNoteDisc"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <TextView
+        android:id="@+id/tvNoteDisc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Hameed"
+        android:fontFamily="monospace"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:layout_marginLeft="4dp"
+        android:textSize="16sp"
+        android:background="@drawable/item_note_disc"
+        app:layout_constraintTop_toBottomOf="@id/ivDelete"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
